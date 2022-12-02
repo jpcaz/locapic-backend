@@ -1,6 +1,7 @@
-var express = require('express');
+var express = require("express");
 var router = express.Router();
-router.get('/test',(req,res)=>{
-res.json({result:true});
-})
+
+router.get("/", (req, res) => {
+  res.render("index.html");
+});
 module.exports = router;
